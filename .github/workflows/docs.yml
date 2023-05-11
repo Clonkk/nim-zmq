@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          set-safe-directory: '*'
           ref: "gh-pages"
       - name: "install_nim"
         id: install_nim
