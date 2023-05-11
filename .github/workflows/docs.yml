@@ -11,6 +11,7 @@ jobs:
         with:
           set-safe-directory: '*'
           ref: "gh-pages"
+      - run: echo "git config --global --add safe.directory ${GITHUB_WORKSPACE}"
       - name: "install_nim"
         id: install_nim
         uses: iffy/install-nim@v3
